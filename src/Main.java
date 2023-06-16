@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 public class Main {
-    static List<Integer> grades = new ArrayList();
+    static List<Integer> grades = new ArrayList<>();
     static int a,b,c,d,e;
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -41,7 +41,7 @@ public class Main {
 
     }
     public static void calculate(){
-        System.out.println("Average is: " + (a+b+c+d+e)/grades.stream().count());
+        System.out.println("Average is: " + (a+b+c+d+e)/grades.size());
     }
 }
 
