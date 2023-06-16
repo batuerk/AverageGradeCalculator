@@ -12,6 +12,7 @@ public class Calculate {
         this.e = e;
         this.grades = grades;
     }
+
     public void calculate(){
         System.out.println("Average is: " + (a+b+c+d+e)/grades.size());
     }

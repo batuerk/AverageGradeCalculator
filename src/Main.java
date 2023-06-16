@@ -2,10 +2,11 @@ import java.util.ArrayList;
 import java.util.Scanner;
 import java.util.List;
 public class Main {
-    static List<Integer> grades = new ArrayList<>();
-    static int a,b,c,d,e,avg;
+
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
+        List<Integer> grades = new ArrayList<>();
+        int a,b,c,d,e,avg;
 
         System.out.print("Enter Physic Grade: ");
         a = input.nextInt();
@@ -43,8 +44,6 @@ public class Main {
         avg = (a+b+c+d+e)/grades.size();
         boolean gectiMi = (avg > 50);
         System.out.println("Geçti mi?: " + gectiMi);
-
     }
-
 }
 
