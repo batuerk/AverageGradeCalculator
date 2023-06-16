@@ -27,7 +27,12 @@ public class Main {
         e = input.nextInt();
         grades.add(e);
 
-        calculate();
+        //Constructor
+        Calculate calculate = new Calculate(a,b,c,d,e,grades);
+        calculate.calculate();
+
+        //Static
+        Calculate.calculate(a,b,c,d,e,grades);
 
         System.out.println("Physic Grade: " + a);
         System.out.println("Math Grade: " + b);
@@ -40,8 +45,6 @@ public class Main {
         System.out.println("Geçti mi?: " + gectiMi);
 
     }
-    public static void calculate(){
-        System.out.println("Average is: " + (a+b+c+d+e)/grades.size());
-    }
+
 }
 
